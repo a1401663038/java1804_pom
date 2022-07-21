@@ -1,9 +1,6 @@
 package com.qf.entity;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -11,12 +8,14 @@ import java.io.Serializable;
 @Getter
 @ToString
 @EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 public class Goods implements Serializable {
     private  Integer  id;
     private  String title;
     private  String ginfo;
     private  double gcount;
-    private  Integer tid;
+    private  Integer tid=1;
     private  double allprice;
     private double price;
     private String gimage;

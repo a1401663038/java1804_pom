@@ -19,4 +19,16 @@ public class GoodsServiceImpl implements IGoodsService {
         List<Goods> goods = iGoodsDao.queryAll();
         return goods;
     }
+
+    @Override
+    public Goods addGoods(Goods goods) {
+        int i = iGoodsDao.addGoods(goods);
+        System.out.println("业务层的住建回家"+goods.getId());
+        return goods;
+    }
+
+    @Override
+    public List<Goods> queryNew() {
+        return iGoodsDao.queryNew();
+    }
 }
