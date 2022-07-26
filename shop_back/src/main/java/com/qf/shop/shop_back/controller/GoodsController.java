@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
-//我的第二次提价
+//我的第二次提价很开心
 @Controller
 @RequestMapping("/goods")
 public class GoodsController {
